@@ -98,7 +98,7 @@ fieldset {
   margin-bottom: 16px;
 }
 .burger__menu {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 24px;
@@ -107,32 +107,7 @@ fieldset {
 }
 
 .nav__burger {
-  fill: #2f2f37;
-  
-  
-}
-
-@media (max-width: 320px) {
-  .header-top {
-    height: 56px;
-    position: absolute;
-  }
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .logo {
-    padding: 16px;
-  }
-  .nav-inner {
-    flex-direction: column;
-  visibility: hidden;
-  }
-  .visually-hidden .burger__menu {
-    position: relative;
-    top: 0;
-    right: 14px;
-  }
+  fill: #2f2f37; 
 }
 
 /* Navigation */
@@ -219,11 +194,47 @@ fieldset {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (max-width: 320px) {
+  .header-top {
+    height: 56px;
+  }
 
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 320px;
+  }
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .logo {
+    padding: 16px;
+  }
+
+  .nav-inner {
+    display: none;
+    flex-direction: column;
+  }
+
+  .address-title {
+    display: none;
+  }
+
+  .burger__menu {
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 14px;
+
+  }
+}
 
 
 
 /*-----------Main------------*/
+
+/*--------Section intro----------*/
 .main-page {
   margin: 0 auto;
 }
@@ -292,6 +303,17 @@ fieldset {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (max-width: 320px) {
+  .section_intro {
+    padding: 72px 52px;
+  }
+  .intro-title {
+    font-size: 36px;
+    margin-bottom: 72px;
+  }
+}
+
+/*---------methods-------*/
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -355,6 +377,33 @@ fieldset {
   letter-spacing: 0.02em;
   color: #434455;
 }
+@media (max-width: 320px) {
+  .box-icon {
+    display: none;
+  }
+  .methods-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .methods-item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .methods-subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    text-align: center;
+  }
+  .methods-text {
+    font-weight: 500;
+    margin-bottom: 72px;
+
+  }
+}
+
+/*-----Team-----*/
+
 .section_team {
   background-color: #f4f4fd;
 }
@@ -403,7 +452,16 @@ fieldset {
   margin-bottom: 8px;
 }
 
-/*****Social team****/
+@media (max-width: 320px) {
+  .team-block {
+    flex-direction: column;
+  }
+  .team-inner {
+    width: 100%;
+  }
+}
+
+/*------ Team------*/
 .social__team {
   display: flex;
   justify-content: center;
