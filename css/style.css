@@ -213,6 +213,10 @@ fieldset {
     padding: 16px;
   }
 
+  .nav-inner {
+    display: none;
+  }
+
   .address-title {
     display: none;
   }
@@ -303,6 +307,9 @@ fieldset {
   .intro-title {
     font-size: 36px;
     margin-bottom: 72px;
+  }
+  .btn {
+    padding: 16px 32px;
   }
 }
 
@@ -873,7 +880,6 @@ fieldset {
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
-  margin-bottom: 24px;
   border: none;
   cursor: pointer;
   font-weight: 500;
@@ -1039,4 +1045,12 @@ fieldset {
 .contacts__item__menu:first-child a {
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*----Modal mobile----*/
+
+.modal__mobile {
+  width: 288px;
+  height: 623px;
+  padding: 72px 16px 16px 16px;
 }
