@@ -590,7 +590,7 @@
         </form>
       </div>
     </div>
-    <div class="modal-overlay">
+    <div class="modal-overlay mob__menu__over">
       <div class="mobile__menu">
         <button type="button" class="btn__close">
           <svg class="svg_close" width="8" height="8">
@@ -658,7 +658,7 @@
         </div>
       </div>
     </div>
-    <div class="modal-overlay">
+    <div class="modal-overlay mobile__modal__over">
       <div class="modal modal__mobile">
         <button type="button" class="btn__close">
           <svg class="svg_close" width="8" height="8">
@@ -736,6 +736,89 @@
               <a class="check__text mobile__check__text" href="#"
                 >Privacy Policy</a
               >
+            </label>
+          </div>
+          <button class="btn__modal" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-overlay tablet__modal">
+      <div class="modal">
+        <button type="button" class="btn__close">
+          <svg class="svg_close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black1"></use>
+          </svg>
+        </button>
+        <p class="modal__text">Leave your contacts and we will call you back</p>
+        <form class="form__modal">
+          <div class="modal__form__lab">
+            <label class="modal__form__label" for="user-name">Name</label>
+            <div class="modal__form__input">
+              <input
+                class="form__input__modal"
+                id="user-name"
+                type="text"
+                name="user-name"
+              />
+              <svg class="svg__modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__form__lab">
+            <label class="modal__form__label" for="user-phone">Phone</label>
+            <div class="modal__form__input">
+              <input
+                class="form__input__modal"
+                id="user-phone"
+                type="phone"
+                name="user-phone"
+              />
+              <svg class="svg__modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__form__lab">
+            <label class="modal__form__label" for="user-email">Email</label>
+            <div class="modal__form__input">
+              <input
+                class="form__input__modal"
+                id="user-email"
+                type="email"
+                name="user-email"
+              />
+              <svg class="svg__modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-vector-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__form__lab modal__form__lab__com">
+            <label class="modal__form__label" for="user-comment">Comment</label>
+            <textarea
+              id="user-comment"
+              class="form__textarea__comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="checkbox">
+            <input
+              id="user-privacy"
+              type="checkbox"
+              value="true"
+              name="user-privacy"
+              class="visually-hidden"
+            />
+            <label for="user-privacy" class="label__checkbox">
+              <span class="modal_svg__check">
+                <svg class="modal__icon__check__active" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vectoractive"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="check__text" href="#">Privacy Policy</a>
             </label>
           </div>
           <button class="btn__modal" type="submit">Send</button>
